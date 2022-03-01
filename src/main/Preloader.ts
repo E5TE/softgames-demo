@@ -37,7 +37,7 @@ export class Preloader extends Container {
         }
         protected updateProgress():void{
             if(this.loader.loading) {
-                this.label.text = this.loader.progress.toFixed(2) + "%";
+                this.label.text = Math.round(this.loader.progress) + "%";
                 this.alignVisuals();
                 if(this.loader.progress == 100){
                     this.eventDispatcher.emit("gameLoadingComple");
