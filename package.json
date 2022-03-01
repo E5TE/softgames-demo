@@ -1,0 +1,36 @@
+{
+  "name": "newdemo",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "Esteban Petliuk",
+  "description": "Demo for SoftGames",
+  "engines": {
+    "node": "^14.0.0",
+    "npm": "^7.0.0"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "webpack serve --mode=development",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@pixi/particle-emitter": "^5.0.3",
+    "mitt": "^3.0.0",
+    "pixi.js": "6.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "15.6.0",
+    "@types/pixi.js": "5.0.0",
+    "@typescript-eslint/eslint-plugin": "4.24.0",
+    "@typescript-eslint/parser": "4.24.0",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "9.0.0",
+    "html-webpack-plugin": "5.3.1",
+    "ts-loader": "9.2.2",
+    "typescript": "4.2.4",
+    "webpack": "5.37.1",
+    "webpack-cli": "4.7.0",
+    "webpack-dev-server": "3.11.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
